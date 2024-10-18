@@ -1,0 +1,45 @@
+Results for h2114156_tissues:
+h2114156_h&e.tif_2.tif vs h2114156_melan.tif_1.tif: Similarity score = 12.79
+h2114156_h&e.tif_2.tif vs h2114156_h&e.tif_3.tif: Similarity score = 15.09
+h2114156_h&e.tif_2.tif vs h2114156_h&e.tif_1.tif: Similarity score = 10.37
+h2114156_h&e.tif_2.tif vs h2114156_melan.tif_2.tif: Similarity score = 74.76
+h2114156_melan.tif_1.tif vs h2114156_h&e.tif_3.tif: Similarity score = 3.59
+h2114156_melan.tif_1.tif vs h2114156_h&e.tif_1.tif: Similarity score = 2.46
+h2114156_melan.tif_1.tif vs h2114156_melan.tif_2.tif: Similarity score = 61.97
+h2114156_h&e.tif_3.tif vs h2114156_h&e.tif_1.tif: Similarity score = 4.76
+h2114156_h&e.tif_3.tif vs h2114156_melan.tif_2.tif: Similarity score = 59.67
+h2114156_h&e.tif_1.tif vs h2114156_melan.tif_2.tif: Similarity score = 64.43
+Results for h2114153_tissues:
+h2114153_melan_1.tif vs h2114153_melan_2.tif: Similarity score = 0.98
+h2114153_melan_1.tif vs h2114153_h&e_1.tif: Similarity score = 0.23
+h2114153_melan_1.tif vs h2114153_h&e_3.tif: Similarity score = 0.39
+h2114153_melan_1.tif vs h2114153_h&e_2.tif: Similarity score = 0.15
+h2114153_melan_1.tif vs h2114153_h&e_4.tif: Similarity score = 0.43
+h2114153_melan_2.tif vs h2114153_h&e_1.tif: Similarity score = 1.19
+h2114153_melan_2.tif vs h2114153_h&e_3.tif: Similarity score = 0.95
+h2114153_melan_2.tif vs h2114153_h&e_2.tif: Similarity score = 0.99
+h2114153_melan_2.tif vs h2114153_h&e_4.tif: Similarity score = 1.00
+h2114153_h&e_1.tif vs h2114153_h&e_3.tif: Similarity score = 0.61
+h2114153_h&e_1.tif vs h2114153_h&e_2.tif: Similarity score = 0.37
+h2114153_h&e_1.tif vs h2114153_h&e_4.tif: Similarity score = 0.21
+h2114153_h&e_3.tif vs h2114153_h&e_2.tif: Similarity score = 0.29
+h2114153_h&e_3.tif vs h2114153_h&e_4.tif: Similarity score = 0.82
+h2114153_h&e_2.tif vs h2114153_h&e_4.tif: Similarity score = 0.53
+Results for h2114165_tissues:
+h2114165_sox10.tif_1.tif vs h2114165_h&e.tif_1.tif: Similarity score = 0.24
+h2114165_sox10.tif_1.tif vs h2114165_h&e.tif_3.tif: Similarity score = 1.66
+h2114165_sox10.tif_1.tif vs h2114165_h&e.tif_2.tif: Similarity score = 1.12
+h2114165_h&e.tif_1.tif vs h2114165_h&e.tif_3.tif: Similarity score = 1.56
+h2114165_h&e.tif_1.tif vs h2114165_h&e.tif_2.tif: Similarity score = 1.00
+h2114165_h&e.tif_3.tif vs h2114165_h&e.tif_2.tif: Similarity score = 0.57
+Results for h2114166_tissues:
+h2114166_sox10.tif_1.tif vs h2114166_h&e.tif_3.tif: Similarity score = 6.36
+h2114166_sox10.tif_1.tif vs h2114166_h&e.tif_2.tif: Similarity score = 6.76
+h2114166_sox10.tif_1.tif vs h2114166_h&e.tif_1.tif: Similarity score = 6.73
+h2114166_sox10.tif_1.tif vs h2114166_h&e.tif_4.tif: Similarity score = 4.90
+h2114166_h&e.tif_3.tif vs h2114166_h&e.tif_2.tif: Similarity score = 0.41
+h2114166_h&e.tif_3.tif vs h2114166_h&e.tif_1.tif: Similarity score = 0.41
+h2114166_h&e.tif_3.tif vs h2114166_h&e.tif_4.tif: Similarity score = 1.53
+h2114166_h&e.tif_2.tif vs h2114166_h&e.tif_1.tif: Similarity score = 0.07
+h2114166_h&e.tif_2.tif vs h2114166_h&e.tif_4.tif: Similarity score = 1.92
+h2114166_h&e.tif_1.tif vs h2114166_h&e.tif_4.tif: Similarity score = 1.90
