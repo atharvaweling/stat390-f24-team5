@@ -5,12 +5,22 @@ import os
 from skimage.metrics import structural_similarity as ssim #structural similarity index 
 from skimage.feature import hog # image structure and texture
 from collections import defaultdict
+import matplotlib.pyplot as plt
 
 # HOG - Histogram of Oriented Gradients
-def compute_hog_features(tissue, resize_shape=(150, 150)):
-    tissue_resized = np.array(Image.fromarray(tissue).resize(resize_shape))
+def compute_hog_features(tissue):
+    tissue_resized = np.array(Image.fromarray(tissue).resize((512, 1024)))
     gray_tissue = cv2.cvtColor(tissue_resized, cv2.COLOR_RGB2GRAY)
-    hog_features = hog(gray_tissue, orientations=9, pixels_per_cell=(8, 8), cells_per_block=(2, 2), visualize=False, block_norm='L2-Hys') #calculates textures and gradients
+    hog_features, hog_image = hog(gray_tissue, orientations=9, pixels_per_cell=(16, 16), cells_per_block=(2, 2), visualize=True, block_norm='L2-Hys') #calculates textures and gradients
+    # plt.figure(figsize=(8, 4))
+    # plt.subplot(1, 2, 1)
+    # plt.imshow(gray_tissue, cmap='gray')
+    # plt.title('Input image')
+
+    # plt.subplot(1, 2, 2)
+    # plt.imshow(hog_image, cmap='gray')
+    # plt.title('HOG features')
+    # plt.show()
     return hog_features
 
 # SSIM - structural similarity
@@ -19,7 +29,11 @@ def compute_ssim(tissue1, tissue2):
     tissue2_resized = cv2.resize(tissue2, (256, 256))
     gray1 = cv2.cvtColor(tissue1_resized, cv2.COLOR_RGB2GRAY)
     gray2 = cv2.cvtColor(tissue2_resized, cv2.COLOR_RGB2GRAY)
-    score, _ = ssim(gray1, gray2, full=True) # only want similarity score, not map
+    score, ssim_map = ssim(gray1, gray2, full=True) # only want similarity score, not map
+    # plt.imshow(ssim_map, cmap='gray')
+    # plt.colorbar()
+    # plt.title(f'SSIM Map,(Global SSIM: {score:.2f})')
+    # plt.show()
     return score
 
 # HOG features similarity
@@ -95,7 +109,7 @@ def split_by_patient(tissue_folder):
     return patient_groups
 
 # Function similarity grouping within each patient group
-def achieve_desired_groupings(tissue_folder, hog_threshold=15, ssim_threshold=0.3):
+def achieve_desired_groupings(tissue_folder, hog_threshold, ssim_threshold):
     patient_groups = split_by_patient(tissue_folder)
     final_groupings = {}
 
@@ -118,7 +132,7 @@ def print_groupings(groupings):
 tissue_folder = "/Users/parth/Desktop/STAT390/Presentation_3/Images"
 
 # Running the function with adjusted thresholds to achieve the desired groupings
-desired_groupings = achieve_desired_groupings(tissue_folder, hog_threshold=15, ssim_threshold=0.21)
+desired_groupings = achieve_desired_groupings(tissue_folder, hog_threshold=50, ssim_threshold=0.155)
 
 # Print out the groupings
 print_groupings(desired_groupings)
