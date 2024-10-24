@@ -1,0 +1,1314 @@
+{
+  "version": "0.5.1",
+  "createTimestamp": 1727907659523,
+  "modifyTimestamp": 1727907659523,
+  "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/project/project.qpproj",
+  "lastID": 109,
+  "images": [
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114153_h\u0026e.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "h2114153_h\u0026e.tif - Series 0",
+          "width": 16384,
+          "height": 145408,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 16384,
+              "height": 145408
+            },
+            {
+              "downsample": 2.0,
+              "width": 8192,
+              "height": 72704
+            },
+            {
+              "downsample": 4.0,
+              "width": 4096,
+              "height": 36352
+            },
+            {
+              "downsample": 8.0,
+              "width": 2048,
+              "height": 18176
+            },
+            {
+              "downsample": 16.0,
+              "width": 1024,
+              "height": 9088
+            },
+            {
+              "downsample": 32.0,
+              "width": 512,
+              "height": 4544
+            },
+            {
+              "downsample": 64.0,
+              "width": 256,
+              "height": 2272
+            },
+            {
+              "downsample": 128.0,
+              "width": 128,
+              "height": 1136
+            },
+            {
+              "downsample": 256.0,
+              "width": 64,
+              "height": 568
+            },
+            {
+              "downsample": 512.0,
+              "width": 32,
+              "height": 284
+            },
+            {
+              "downsample": 1024.0,
+              "width": 16,
+              "height": 142
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "magnification": 40.0,
+          "preferredTileWidth": 1024,
+          "preferredTileHeight": 1024
+        }
+      },
+      "entryID": 76,
+      "randomizedName": "563cd8c2-6089-4aa6-85e5-ef323d204c73",
+      "imageName": "h2114153_h\u0026e.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114153_h\u0026e.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 77,
+      "randomizedName": "20d5006f-9ec4-4551-b91d-466df84e5701",
+      "imageName": "h2114153_h\u0026e.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114153_melan.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 78,
+      "randomizedName": "9fbbd043-848a-4c35-8563-33f8809f3614",
+      "imageName": "h2114153_melan.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114153_melan.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 79,
+      "randomizedName": "8f08ce9e-bfb2-4f89-9c2d-a4e47f4879bd",
+      "imageName": "h2114153_melan.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114154_h\u0026e.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "h2114154_h\u0026e.tif - Series 0",
+          "width": 16384,
+          "height": 156672,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 16384,
+              "height": 156672
+            },
+            {
+              "downsample": 2.0,
+              "width": 8192,
+              "height": 78336
+            },
+            {
+              "downsample": 4.0,
+              "width": 4096,
+              "height": 39168
+            },
+            {
+              "downsample": 8.0,
+              "width": 2048,
+              "height": 19584
+            },
+            {
+              "downsample": 16.0,
+              "width": 1024,
+              "height": 9792
+            },
+            {
+              "downsample": 32.0,
+              "width": 512,
+              "height": 4896
+            },
+            {
+              "downsample": 64.0,
+              "width": 256,
+              "height": 2448
+            },
+            {
+              "downsample": 128.0,
+              "width": 128,
+              "height": 1224
+            },
+            {
+              "downsample": 256.0,
+              "width": 64,
+              "height": 612
+            },
+            {
+              "downsample": 512.0,
+              "width": 32,
+              "height": 306
+            },
+            {
+              "downsample": 1024.0,
+              "width": 16,
+              "height": 153
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "magnification": 40.0,
+          "preferredTileWidth": 1024,
+          "preferredTileHeight": 1024
+        }
+      },
+      "entryID": 80,
+      "randomizedName": "b9c02e2d-e79e-481b-80dc-78b60694f153",
+      "imageName": "h2114154_h\u0026e.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114154_h\u0026e.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 81,
+      "randomizedName": "8751c88c-aa57-456e-a00b-5123b6db4cac",
+      "imageName": "h2114154_h\u0026e.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114156_h\u0026e.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "h2114156_h\u0026e.tif - Series 0",
+          "width": 16384,
+          "height": 175104,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 16384,
+              "height": 175104
+            },
+            {
+              "downsample": 2.0,
+              "width": 8192,
+              "height": 87552
+            },
+            {
+              "downsample": 4.0,
+              "width": 4096,
+              "height": 43776
+            },
+            {
+              "downsample": 8.0,
+              "width": 2048,
+              "height": 21888
+            },
+            {
+              "downsample": 16.0,
+              "width": 1024,
+              "height": 10944
+            },
+            {
+              "downsample": 32.0,
+              "width": 512,
+              "height": 5472
+            },
+            {
+              "downsample": 64.0,
+              "width": 256,
+              "height": 2736
+            },
+            {
+              "downsample": 128.0,
+              "width": 128,
+              "height": 1368
+            },
+            {
+              "downsample": 256.0,
+              "width": 64,
+              "height": 684
+            },
+            {
+              "downsample": 512.0,
+              "width": 32,
+              "height": 342
+            },
+            {
+              "downsample": 1024.0,
+              "width": 16,
+              "height": 171
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "magnification": 40.0,
+          "preferredTileWidth": 1024,
+          "preferredTileHeight": 1024
+        }
+      },
+      "entryID": 82,
+      "randomizedName": "c6c6d168-8415-4654-8178-c816c7277f47",
+      "imageName": "h2114156_h\u0026e.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114156_h\u0026e.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 83,
+      "randomizedName": "4d63b0f5-4acd-47c4-8433-b095f5309ae0",
+      "imageName": "h2114156_h\u0026e.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114156_melan.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 84,
+      "randomizedName": "b0a12746-2949-44ca-9806-f9b545c17707",
+      "imageName": "h2114156_melan.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114156_melan.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 85,
+      "randomizedName": "827b818b-e8fb-4e2e-888a-73ac2e472adc",
+      "imageName": "h2114156_melan.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114157_melan.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 86,
+      "randomizedName": "c7594fa8-3288-415c-a921-04dbf59306ac",
+      "imageName": "h2114157_melan.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114157_melan.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 87,
+      "randomizedName": "5f9dcc89-62cd-4b79-830d-de0f92d6389b",
+      "imageName": "h2114157_melan.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114158_sox10.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 88,
+      "randomizedName": "abc355b4-0450-476f-86a1-ba078ce415d7",
+      "imageName": "h2114158_sox10.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114158_sox10.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 89,
+      "randomizedName": "88c2dd81-bfcf-4fcf-b959-866de86c7d97",
+      "imageName": "h2114158_sox10.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114161_sox10.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 90,
+      "randomizedName": "dce1bea8-6e55-4ae2-9dfb-deb06fd59b42",
+      "imageName": "h2114161_sox10.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114161_sox10.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 91,
+      "randomizedName": "91b46450-a9a2-4cff-9eaa-68ec428e764d",
+      "imageName": "h2114161_sox10.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114164_sox10.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 92,
+      "randomizedName": "3156a531-4073-4164-a5b7-5dd3453e7ead",
+      "imageName": "h2114164_sox10.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114164_sox10.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 93,
+      "randomizedName": "ec1b8dd1-f920-4ee6-80e5-64f907c9b41b",
+      "imageName": "h2114164_sox10.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114165_h\u0026e.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "h2114165_h\u0026e.tif - Series 0",
+          "width": 16384,
+          "height": 88064,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 16384,
+              "height": 88064
+            },
+            {
+              "downsample": 2.0,
+              "width": 8192,
+              "height": 44032
+            },
+            {
+              "downsample": 4.0,
+              "width": 4096,
+              "height": 22016
+            },
+            {
+              "downsample": 8.0,
+              "width": 2048,
+              "height": 11008
+            },
+            {
+              "downsample": 16.0,
+              "width": 1024,
+              "height": 5504
+            },
+            {
+              "downsample": 32.0,
+              "width": 512,
+              "height": 2752
+            },
+            {
+              "downsample": 64.0,
+              "width": 256,
+              "height": 1376
+            },
+            {
+              "downsample": 128.0,
+              "width": 128,
+              "height": 688
+            },
+            {
+              "downsample": 256.0,
+              "width": 64,
+              "height": 344
+            },
+            {
+              "downsample": 512.0,
+              "width": 32,
+              "height": 172
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "magnification": 40.0,
+          "preferredTileWidth": 1024,
+          "preferredTileHeight": 1024
+        }
+      },
+      "entryID": 94,
+      "randomizedName": "565e7cd8-c77f-4ca0-82d0-2b26e56f85f1",
+      "imageName": "h2114165_h\u0026e.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114165_h\u0026e.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 95,
+      "randomizedName": "a7b5ed6e-1701-4975-a700-45290c43464c",
+      "imageName": "h2114165_h\u0026e.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114165_sox10.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 96,
+      "randomizedName": "f8fb1be7-535d-45f1-9021-0da874264a54",
+      "imageName": "h2114165_sox10.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114165_sox10.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 97,
+      "randomizedName": "5461bb01-641b-47cf-8c86-ff5be29d6ded",
+      "imageName": "h2114165_sox10.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114166_h\u0026e.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "h2114166_h\u0026e.tif - Series 0",
+          "width": 16384,
+          "height": 146432,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 16384,
+              "height": 146432
+            },
+            {
+              "downsample": 2.0,
+              "width": 8192,
+              "height": 73216
+            },
+            {
+              "downsample": 4.0,
+              "width": 4096,
+              "height": 36608
+            },
+            {
+              "downsample": 8.0,
+              "width": 2048,
+              "height": 18304
+            },
+            {
+              "downsample": 16.0,
+              "width": 1024,
+              "height": 9152
+            },
+            {
+              "downsample": 32.0,
+              "width": 512,
+              "height": 4576
+            },
+            {
+              "downsample": 64.0,
+              "width": 256,
+              "height": 2288
+            },
+            {
+              "downsample": 128.0,
+              "width": 128,
+              "height": 1144
+            },
+            {
+              "downsample": 256.0,
+              "width": 64,
+              "height": 572
+            },
+            {
+              "downsample": 512.0,
+              "width": 32,
+              "height": 286
+            },
+            {
+              "downsample": 1024.0,
+              "width": 16,
+              "height": 143
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "magnification": 40.0,
+          "preferredTileWidth": 1024,
+          "preferredTileHeight": 1024
+        }
+      },
+      "entryID": 98,
+      "randomizedName": "ea070ca2-1898-4164-841c-1d78f668487d",
+      "imageName": "h2114166_h\u0026e.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114166_h\u0026e.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 99,
+      "randomizedName": "5c1ad84a-40c2-4cc3-bb57-840bde16eb6f",
+      "imageName": "h2114166_h\u0026e.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114166_sox10.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 100,
+      "randomizedName": "4186efdd-57f5-4b87-81b4-2ace27e686c1",
+      "imageName": "h2114166_sox10.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114166_sox10.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 101,
+      "randomizedName": "a9c473a4-ef7a-4701-b42e-0d04872cf2f7",
+      "imageName": "h2114166_sox10.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114174_melan.tif",
+        "args": [
+          "--series",
+          "0"
+        ]
+      },
+      "entryID": 102,
+      "randomizedName": "18b4e194-58a5-426a-8953-44f51b786565",
+      "imageName": "h2114174_melan.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114174_melan.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 103,
+      "randomizedName": "22c44d11-ea3d-453d-97ca-0dd3e02372c8",
+      "imageName": "h2114174_melan.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114181_h\u0026e.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "h2114181_h\u0026e.tif - Series 0",
+          "width": 20480,
+          "height": 155648,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 20480,
+              "height": 155648
+            },
+            {
+              "downsample": 2.0,
+              "width": 10240,
+              "height": 77824
+            },
+            {
+              "downsample": 4.0,
+              "width": 5120,
+              "height": 38912
+            },
+            {
+              "downsample": 8.0,
+              "width": 2560,
+              "height": 19456
+            },
+            {
+              "downsample": 16.0,
+              "width": 1280,
+              "height": 9728
+            },
+            {
+              "downsample": 32.0,
+              "width": 640,
+              "height": 4864
+            },
+            {
+              "downsample": 64.0,
+              "width": 320,
+              "height": 2432
+            },
+            {
+              "downsample": 128.0,
+              "width": 160,
+              "height": 1216
+            },
+            {
+              "downsample": 256.0,
+              "width": 80,
+              "height": 608
+            },
+            {
+              "downsample": 512.0,
+              "width": 40,
+              "height": 304
+            },
+            {
+              "downsample": 1024.0,
+              "width": 20,
+              "height": 152
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "magnification": 40.0,
+          "preferredTileWidth": 1024,
+          "preferredTileHeight": 1024
+        }
+      },
+      "entryID": 104,
+      "randomizedName": "6e82147e-6f19-4e54-b392-5acc4c75ce05",
+      "imageName": "h2114181_h\u0026e.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114181_h\u0026e.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 105,
+      "randomizedName": "9215b5e0-39ba-4e0a-9445-18e3ca25a5af",
+      "imageName": "h2114181_h\u0026e.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114185_h\u0026e.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "h2114185_h\u0026e.tif - Series 0",
+          "width": 32768,
+          "height": 156672,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 32768,
+              "height": 156672
+            },
+            {
+              "downsample": 2.0,
+              "width": 16384,
+              "height": 78336
+            },
+            {
+              "downsample": 4.0,
+              "width": 8192,
+              "height": 39168
+            },
+            {
+              "downsample": 8.0,
+              "width": 4096,
+              "height": 19584
+            },
+            {
+              "downsample": 16.0,
+              "width": 2048,
+              "height": 9792
+            },
+            {
+              "downsample": 32.0,
+              "width": 1024,
+              "height": 4896
+            },
+            {
+              "downsample": 64.0,
+              "width": 512,
+              "height": 2448
+            },
+            {
+              "downsample": 128.0,
+              "width": 256,
+              "height": 1224
+            },
+            {
+              "downsample": 256.0,
+              "width": 128,
+              "height": 612
+            },
+            {
+              "downsample": 512.0,
+              "width": 64,
+              "height": 306
+            },
+            {
+              "downsample": 1024.0,
+              "width": 32,
+              "height": 153
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "magnification": 40.0,
+          "preferredTileWidth": 1024,
+          "preferredTileHeight": 1024
+        }
+      },
+      "entryID": 106,
+      "randomizedName": "ed81d620-6f16-4dd3-8f2f-32ecf84b7605",
+      "imageName": "h2114185_h\u0026e.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114185_h\u0026e.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 107,
+      "randomizedName": "e3cff92e-44e9-48ec-9bd5-eea1405513a4",
+      "imageName": "h2114185_h\u0026e.tif - mask image",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114190_h\u0026e.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "h2114190_h\u0026e.tif - Series 0",
+          "width": 24576,
+          "height": 157696,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 24576,
+              "height": 157696
+            },
+            {
+              "downsample": 2.0,
+              "width": 12288,
+              "height": 78848
+            },
+            {
+              "downsample": 4.0,
+              "width": 6144,
+              "height": 39424
+            },
+            {
+              "downsample": 8.0,
+              "width": 3072,
+              "height": 19712
+            },
+            {
+              "downsample": 16.0,
+              "width": 1536,
+              "height": 9856
+            },
+            {
+              "downsample": 32.0,
+              "width": 768,
+              "height": 4928
+            },
+            {
+              "downsample": 64.0,
+              "width": 384,
+              "height": 2464
+            },
+            {
+              "downsample": 128.0,
+              "width": 192,
+              "height": 1232
+            },
+            {
+              "downsample": 256.0,
+              "width": 96,
+              "height": 616
+            },
+            {
+              "downsample": 512.0,
+              "width": 48,
+              "height": 308
+            },
+            {
+              "downsample": 1024.0,
+              "width": 24,
+              "height": 154
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.25,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "magnification": 40.0,
+          "preferredTileWidth": 1024,
+          "preferredTileHeight": 1024
+        }
+      },
+      "entryID": 108,
+      "randomizedName": "97b02443-16fd-4c16-a401-791f6edab377",
+      "imageName": "h2114190_h\u0026e.tif - Series 0",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/Users/kylabruno/Downloads/Senior_Fall/Stat_390/images/Sheffield%20rescan/h2114190_h\u0026e.tif",
+        "args": [
+          "--series",
+          "2"
+        ]
+      },
+      "entryID": 109,
+      "randomizedName": "76abfd07-a1af-484d-bfd9-8b0864d16314",
+      "imageName": "h2114190_h\u0026e.tif - mask image",
+      "metadata": {}
+    }
+  ]
+}
