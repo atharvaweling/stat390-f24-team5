@@ -88,4 +88,4 @@ When a patient has only one tissue sample, the axes variable used in the `show()
 ##### Next Steps
 - better handle matching when no comparisons can be made
 - better handle matching when stain not found for a patient. maybe rather than pass stain types into the match function, we change it to just run on all available types (skip over impossible comparisons without interrupting).
-- test three way matches and edit similarity_matrix to display three way matches in a user-friendly way
+- test three way matches and edit similarity_matrix to display three way matches in a user-friendly way (use 37 samples just posted)
