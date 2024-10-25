@@ -82,3 +82,7 @@ When a patient has only one tissue sample, the axes variable used in the `show()
 ``display_similar_combinations(matching_indices, set1, set2, names)``: improves user experience by not only showing a similarity matrix, but by displaying samples found to be similar side by side for manual viewing. 
 - makes it much easier to check and visualize results
 - all the information a user needs can be provided based on their specifications; basis for an expanded GUI
+
+##### Next Steps
+- better handle matching when no comparisons can be made
+- better handle matching when stain not found for a patient. maybe rather than pass stain types into the match function, we change it to just run on all available types (skip over impossible comparisons without interrupting). 
