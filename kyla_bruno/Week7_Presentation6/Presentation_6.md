@@ -58,3 +58,4 @@ Then complete the following steps in order
 8. Can review annotated results here if you'd like and delete annotations for unusable samples. Can also delete them later after exportation
 9. "Automate" --> "Project scripts" --> `6 export annotations` --> Click "Run"
 10. Navigate to the Extract Tissues folder in your directory. There should now be an additional folder called "Tissues" that contains subfolders corresponding to each raw image. Within each subfolder are the individual tissues extracted from the raw image (anywhere from 1 tissue to 6)
+11. if you are seeing no tissue samples in a bunch of folders, it is just because the .tif files take a while to load into your directory
