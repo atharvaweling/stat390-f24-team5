@@ -7,7 +7,7 @@
 
 ## Instructions to Extract Tissue Slices
 
-1. Download raw image data to your local directory if not already there. 
+1. Download raw image data to your local directory if not already there.
 2. Run `1_rename_to_standard` to standardize the naming convention for all images
 	- make sure to set directory to where you have put the raw image data
 3. Open the QuPath project. Add the raw images
@@ -26,12 +26,32 @@
 - master_script.groovy
 - 6_export_annotations.groovy
 
+#### Additional Notes/Considerations
+
 ## Next Steps
 1. Automate skipping over or removing the mask images
 	- check for QuPath setting to not create them in the first place
+	- Cara has a way to do this but I got an error and need to look closer at it
 
 2. Make decisions for deletion process
 	- detect images with abnormalities, then display to user and allow them to decide if sample should be used or not. User hits Yes/No to keep or not keep. Deletion/exclusion is then automated
 
 3. Implement into GUI (make user friendly)
-	- adjust code to take in input values from the user (eg. local directory where raw data is, yes/no selections, etc.) so the stakeholders don't have to directly work with code 
+	- adjust code to take in input values from the user (eg. local directory where raw data is, yes/no selections, etc.) so the stakeholders don't have to directly work with code
+
+## The Most Detailed Instructions
+
+On your computer, you need
+- Qupath - can download version 0.5.1 here
+- raw image data - can download from our OneDrive (or use new data)
+- the Extract_Tissues folder in this directory
+
+1. Open QuPath
+2. Click "Open Project" --> `/Extract_Tissues` --> `project.qpproj`
+3. Remove any images already in there (shouldn't be any but I may have accidentally uploaded a version of the project with some preloaded)
+4. Click "Add Images"
+5. Drag and drop your raw image data folder. No need to change default settings. No need to open any of the images in the Viewer. Click "Import"
+6. **Step to be Eliminated**: Select all mask images, right click, "Remove images"
+7. In toolbar, click "Automate" --> "Project scripts" --> `master_script` --> click three dots in bottom right of box --> Click "Run for project"
+
+to be cont ...
