@@ -46,6 +46,7 @@ On your computer, you need
 - raw image data - can download from our OneDrive (or use new data)
 - the Extract_Tissues folder in this directory
 
+Then complete the following steps in order
 1. Open QuPath
 2. Click "Open Project" --> `/Extract_Tissues` --> `project.qpproj`
 3. Remove any images already in there (shouldn't be any but I may have accidentally uploaded a version of the project with some preloaded)
