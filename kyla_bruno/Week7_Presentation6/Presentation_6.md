@@ -27,8 +27,6 @@
 - master_script.groovy
 - 6_export_annotations.groovy
 
-#### Additional Notes/Considerations
-
 ## Next Steps
 Automate skipping over or removing the mask images
 - check for QuPath setting to not create them in the first place
