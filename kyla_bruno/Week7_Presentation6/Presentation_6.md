@@ -42,7 +42,8 @@ Implement into GUI (make user friendly)
 ## The Most Detailed Instructions
 
 On your computer, you need
-- Qupath - can download version 0.5.1 here
+- Qupath - can download version 0.5.1 [here](https://qupath.github.io/).
+  	- note that this code was developed with the methods and functions available in this specific version of QuPath, which is the most recent public version as of November 2024
 - raw image data - can download from our OneDrive (or use new data)
 - the Extract_Tissues folder in this directory
 
