@@ -4,6 +4,7 @@
 - ***precisely*** answering padding related questions - Atharva and Parth 
 - avoid manual intervention in tissue slice extraction
 	- Team 3 requests steps 1-3 have the code refined to be easily executable by the stakeholders
+- ensure that tissue slice extraction can handle the Sheffeild Sox10 cases. 
 
 ## Instructions to Extract Tissue Slices
 
@@ -29,15 +30,16 @@
 #### Additional Notes/Considerations
 
 ## Next Steps
-1. Automate skipping over or removing the mask images
-	- check for QuPath setting to not create them in the first place
-	- Cara has a way to do this but I got an error and need to look closer at it
+Automate skipping over or removing the mask images
+- check for QuPath setting to not create them in the first place
+- Cara has a way to do this but I got an error and need to look closer at it
 
-2. Make decisions for deletion process
-	- detect images with abnormalities, then display to user and allow them to decide if sample should be used or not. User hits Yes/No to keep or not keep. Deletion/exclusion is then automated
+Make decisions for deletion process
+- detect images with abnormalities, then display to user and allow them to decide if sample should be used or not. User hits Yes/No to keep or not keep. Deletion/exclusion is then automated
 
-3. Implement into GUI (make user friendly)
-	- adjust code to take in input values from the user (eg. local directory where raw data is, yes/no selections, etc.) so the stakeholders don't have to directly work with code
+Implement into GUI (make user friendly)
+- adjust code to take in input values from the user (eg. local directory where raw data is, yes/no selections, etc.) so the stakeholders don't have to directly work with code
+- might be useful to have scripts to organize local directories in a way that the user specifies (eg. post tissue extraction, make it really easy to group samples by folder, by patient, etc.)
 
 ## The Most Detailed Instructions
 
@@ -51,7 +53,8 @@ On your computer, you need
 3. Remove any images already in there (shouldn't be any but I may have accidentally uploaded a version of the project with some preloaded)
 4. Click "Add Images"
 5. Drag and drop your raw image data folder. No need to change default settings. No need to open any of the images in the Viewer. Click "Import"
-6. **Step to be Eliminated**: Select all mask images, right click, "Remove images"
-7. In toolbar, click "Automate" --> "Project scripts" --> `master_script` --> click three dots in bottom right of box --> Click "Run for project"
-
-to be cont ...
+6. *Step to be Eliminated*: Select all mask images, right click, "Remove images"
+7. In toolbar, click "Automate" --> "Project scripts" --> `master script` --> click three dots in bottom right of box --> Click "Run for project"
+8. Can review annotated results here if you'd like and delete annotations for unusable samples. Can also delete them later after exportation
+9. "Automate" --> "Project scripts" --> `6 export annotations` --> Click "Run"
+10. Navigate to the Extract Tissues folder in your directory. There should now be an additional folder called "Tissues" that contains subfolders corresponding to each raw image. Within each subfolder are the individual tissues extracted from the raw image (anywhere from 1 tissue to 6)
