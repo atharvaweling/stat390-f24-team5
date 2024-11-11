@@ -6,3 +6,8 @@ Literature Review Links: <br />
 [Breast Cancer Classification using FCN](https://pmc.ncbi.nlm.nih.gov/articles/PMC9246636/#sec3) <br />
 [Converting CNN to FCN](https://learnopencv.com/fully-convolutional-image-classification-on-arbitrary-sized-image/) <br />
 [Fast AI](https://docs.fast.ai/)
+
+[Presentation 6](https://docs.google.com/spreadsheets/d/1413GCgFmC1y34owZ0FJIKob4a4hSzU9M-QOJNwOJKhM/edit?usp=sharing)
+<br />
+<br />
+Will be looking at epithelium/stroma segmentation with U-NET for week 7.
