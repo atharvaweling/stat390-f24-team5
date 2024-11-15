@@ -13,8 +13,6 @@ Literature Review Links: <br />
 Presentation 7 Links <br />
 [Segmenting Epithelium and Stroma Documentation](https://andrewjanowczyk.com/pytorch-unet-for-digital-pathology-segmentation/) <br />
 - This is the overview for training a UNet in order to segment epithelium and stroma.
-<br />
-[Same Project with Lymphoma](https://github.com/choosehappy/PytorchDigitalPathology/tree/d9925f3795c47112b6ccbffdc780b1e4ddd72145/classification_lymphoma_densenet)
-<br />
+[Lymphoma Classification with DenseNet](https://github.com/choosehappy/PytorchDigitalPathology/tree/master/classification_lymphoma_densenet) <br /> 
 - This contains workflow and code training a DenseNet to identify the severity of lymphoma. In our case, it can be expanded to 3 classes for benign, severity 1, and severity 2.
 <br />
