@@ -10,7 +10,7 @@ Literature Review Links: <br />
 [Presentation 6](https://docs.google.com/spreadsheets/d/1413GCgFmC1y34owZ0FJIKob4a4hSzU9M-QOJNwOJKhM/edit?usp=sharing)
 <br />
 <br />
-Presentation 7 Links <br />
+Presentation 7 Links: <br />
 [Segmenting Epithelium and Stroma Documentation](https://andrewjanowczyk.com/pytorch-unet-for-digital-pathology-segmentation/) <br />
 - This is the overview for training a UNet in order to segment epithelium and stroma.
   
