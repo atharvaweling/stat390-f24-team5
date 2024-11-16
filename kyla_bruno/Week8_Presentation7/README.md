@@ -19,7 +19,7 @@
 
 ##### Run Master Script
 5. In toolbar, click "Automate" --> "Project scripts" --> `1 master script` 
-6. Click three dots in bottom right of box --> Click "Run for project (without saving)" --> hit ">>" in center to select all images --> click "OK"
+6. Click three dots in bottom right of box --> Click "Run for project" --> hit ">>" in center to select all images --> click "OK"
 	- wait for batch processing to complete
 7. Close the script editor
 	- *Optional: review annotations
@@ -28,7 +28,7 @@
 
 ##### Export Results
 8. In toolbar, click "Automate" --> "Project scripts" --> `2 export annotations` --> Click "Run"
-> its possible to get an "Out of memory" interruption. Make sure you have storage on your machine. Perhaps later we can implement an option to export to a flashdrive or some external disk
+> its possible to get an "Out of memory" interruption. Make sure you have storage on your machine. Perhaps later we can implement an option to export to a flashdrive or some external disk in the UI
 
 ##### View Extracted Slices
 9. Navigate to `/Extract_Tissues/Tissues` in your directory. 
