@@ -22,16 +22,16 @@
 6. Click three dots in bottom right of box --> Click "Run for project" --> hit ">>" in center to select all images --> click "OK"
 	- wait for batch processing to complete
 7. Close the script editor
-	- *Optional: review annotations
+	- *Optional: review annotations and delete any you dont want
 
 >Note the difference between "Run for project" and "Run". The master script is meant to be run for the entire project while the export annotations script is built to simply "Run"
 
 ##### Export Results
 8. In toolbar, click "Automate" --> "Project scripts" --> `2 export annotations` --> Click "Run"
-> its possible to get an "Out of memory" interruption. Make sure you have storage on your machine. Perhaps later we can implement an option to export to a flashdrive or some external disk in the UI
+> its possible to get an "Out of memory" interruption. Make sure you have storage on your machine. Perhaps later we can implement an option to export to a flashdrive or some external disk in the GUI. The default is to load the extracted slices to the directory of the project. 
 
 ##### View Extracted Slices
 9. Navigate to `/Extract_Tissues/Tissues` in your directory. 
 	- Each subfolder corresponds to a single raw image. 
 	- Within each subfolder are the individual tissues extracted from the raw image (anywhere from 1 tissue to 6)
-> Note: if you are seeing no tissue samples in a bunch of folders, it is just because the `.tif` files take a while to load into your directory
+> Note: if you are unexpectedly seeing no tissue samples in some folders, wait a couple minutes as the `.tif` files take a while to load into your directory
