@@ -1,3 +1,5 @@
+# Presentation 7 Summary
+
 ##### (1) Corrected code so that it executes on anyone's system. Shared to GitHub
 - Updated directory paths to be general. Will get the location of the `Extracted_Tissues` folder in a user's directory and navigate to the pixel classifiers from there
 - Removed the giant debris in the sox10s with a max area restriction and thresholder settings
