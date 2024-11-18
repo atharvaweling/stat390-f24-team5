@@ -10,6 +10,7 @@
 - Handled automatic generation and removal of image masks - no longer needs manual removal!
 - Generated tissue slice .tif files for all Sheffeild Sox10s
 - All of the manual intervention required by the user necessary for Cara's extraction process has been automated
+- if a user wants to work from their own project, only need to download `classifiers` and `script` folders and put them in project directory
 
 ##### Next Steps
 - Talk with GUI team about formatting to fit into their design (unsure how to do this without their plan):
