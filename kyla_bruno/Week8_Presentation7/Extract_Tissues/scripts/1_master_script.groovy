@@ -1,117 +1,135 @@
-/// run on the project to run on every image loaded into the project. 
-// Get the current project
+// RUN FOR PROJECT
+
+// load libraries
+import qupath.lib.objects.PathObjects
+import qupath.lib.roi.RoiTools
+import qupath.lib.roi.GeometryTools
+import qupath.lib.roi.interfaces.ROI
+import org.locationtech.jts.geom.Geometry
+
+
+// LOAD IMAGE ================================
+// Get the current open project
 def project = getProject()
 if (project == null) {
     println "No project is currently open."
     return
 }
 
-// Get the base directory of the project
+// Store project's base directory
 def projectBaseDir = project.getBaseDirectory()
-println "The project base directory is: ${projectBaseDir}"
+// println "The project base directory is: ${projectBaseDir}"
 
-// Create annotations from a pixel classifier
+// Store image name in project
 def imageName = getCurrentImageData().getServer().getMetadata().getName()
 
-// Define paths to classifiers GENERALIZE (????????)
+// Clean image name
+if (imageName.contains(" - Series 0")) {
+    imageName = imageName.replace(" - Series 0", "")
+    //println "Updated image name to: ${imageName}"
+}
 
+// Don't use image masks
+if (imageName.toLowerCase().contains(" - mask")) {
+    return
+}
+
+
+// CREATE ANNOTATIONS ================================
+// Define paths to classifiers 
 def heClassifier = new File(projectBaseDir, "classifiers/pixel_classifiers/find_tissue_h&e.json").getAbsolutePath()
 def melanClassifier = new File(projectBaseDir, "classifiers/pixel_classifiers/find_tissue_melan.json").getAbsolutePath()
 def sox10Classifier = new File(projectBaseDir, "classifiers/pixel_classifiers/find_tissue_sox10.json").getAbsolutePath()
 
-println "H&E Classifier Path: ${heClassifier}"
-println "Melan Classifier Path: ${melanClassifier}"
-println "Sox10 Classifier Path: ${sox10Classifier}"
+//println "H&E Classifier Path: ${heClassifier}"
+//println "Melan Classifier Path: ${melanClassifier}"
+//println "Sox10 Classifier Path: ${sox10Classifier}"
 
-// Define area parameters for annotations
-double minArea = 10000  // at least 1000 um to be kept as annotation
+// Annotation Params
+double minArea = 20000
 double minHoleArea = 1.0
-
-// skip over mask images or will throw an error
-if (imageName.toLowerCase().contains("mask")) {
-    print("Skipping mask image")
-    return
-}
 
 // Identify the correct pixel classifier using standardized name
 if (imageName.toLowerCase().contains("h&e")) {
         print("Applying H&E classifier to " + imageName)
         
-         // Clear any existing objects (so dont have to reload when testing)
+        // Clear any existing objects (so dont have to reload)
         clearAllObjects()
         
         // Create Objects
-        createAnnotationsFromPixelClassifier(heClassifier, minArea, minHoleArea) //"SPLIT"
+        createAnnotationsFromPixelClassifier(heClassifier, minArea, minHoleArea)
  
     } else if (imageName.toLowerCase().contains("melan")) {
         print("Applying Melan classifier to " + imageName)
         
         clearAllObjects()
         createAnnotationsFromPixelClassifier(melanClassifier, minArea, minHoleArea)
-        
        
     } else if (imageName.toLowerCase().contains("sox10")) {
         print("Applying Sox10 classifier to " + imageName)
         
         clearAllObjects()
         createAnnotationsFromPixelClassifier(sox10Classifier, minArea, minHoleArea)
- 
     }
       
-      
-import qupath.lib.objects.PathObjects
-import qupath.lib.roi.RoiTools
 
-// Get all annotation objects
+// SPLIT ANNOTATIONS INTO SEPARATE TISSUES =====================================
+// Get all annotations made in the current image
 def annotations = getAnnotationObjects()
 
-// Loop through each annotation and split based on criteria (e.g., convexity)
+// usually creates one big annotation
 annotations.each { annotation ->
     def roi = annotation.getROI()
     
     // Split the annotation by identifying the individual parts
     def splitROIs = RoiTools.splitROI(roi)
     
-    // Create separate annotation objects for each split region
+    // Create separate annotation objects for each  region
     splitROIs.each { subROI ->
         def subAnnotation = PathObjects.createAnnotationObject(subROI)
         addObject(subAnnotation)
     }
     
-    // Remove the original merged annotation if needed
+    // Remove the original annotation if needed
     removeObject(annotation, true)
 }
 
 
+// REDEFINE AS TISSUE CLASS ==================================
 // Define the desired class (create it if it doesn't already exist)
 def tissueClass = getPathClass("Tissue")
 
-// Get all annotations in the image
-def annotations_2 = getAnnotationObjects()
+// Get split annotations
+def annotations_split = getAnnotationObjects()
 
-// Set each annotation's class to "Tissue"
-annotations_2.each { annotation ->
+// Set class to "Tissue"
+annotations_split.each { annotation ->
     annotation.setPathClass(tissueClass)
 }
 
-// Update the hierarchy to reflect changes
+// Update the hierarchy (just in case)
 fireHierarchyUpdate()
 
-print "All annotations have been classified as 'Tissue'."
+
+// REMOVE DEBRIS (TOO LARGE TO BE TISSUE) ========================
+// Get updated annotations
+def annotations_tissue = getAnnotationObjects()
+
+// Remove annotations with an area greater than threshold
+def largeAnnotations = annotations_tissue.findAll { it.getROI()?.getArea() > 10000000} // 8 digits 
+    
+largeAnnotations.each { annotation ->
+    removeObject(annotation, true) 
+}
 
 
-import qupath.lib.roi.GeometryTools
-import qupath.lib.roi.interfaces.ROI
-import org.locationtech.jts.geom.Geometry
+// MERGE BROKEN TISSUE SEGMENTS =============================
+double distanceThreshold = 7000.0
 
-// Parameters
-double distanceThreshold = 7000.0  // Distance threshold in micrometers
-
-// Retrieve all annotations of the "Tissue" class
+// get all tissue annotations with debris removed
 def tissueAnnotations = getAnnotationObjects().findAll { it.getPathClass() != null && it.getPathClass().getName() == "Tissue" }
-print "Number of tissue annotations found: ${tissueAnnotations.size()}"
 
-// Function to calculate Euclidean distance between annotation centroids
+// help function to get Euclidean distance between centroids
 double calculateDistance(def annotation1, def annotation2) {
     double x1 = annotation1.getROI().getCentroidX()
     double y1 = annotation1.getROI().getCentroidY()
@@ -120,7 +138,7 @@ double calculateDistance(def annotation1, def annotation2) {
     return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2))
 }
 
-// Function to merge two annotations
+// helper function to merge two annotations
 def mergeAnnotations(def annotation1, def annotation2) {
     def roi1 = annotation1.getROI()
     def roi2 = annotation2.getROI()
@@ -129,13 +147,13 @@ def mergeAnnotations(def annotation1, def annotation2) {
     Geometry geom1 = GeometryTools.roiToGeometry(roi1)
     Geometry geom2 = GeometryTools.roiToGeometry(roi2)
     
-    // Perform the union operation on the geometries
+    // Union operation
     Geometry mergedGeometry = geom1.union(geom2)
     
-    // Convert back to an ROI
+    // Convert back to ROI
     def mergedROI = GeometryTools.geometryToROI(mergedGeometry, roi1.getImagePlane())
     
-    // Create the merged annotation
+    // Create merged annotation
     def mergedAnnotation = PathObjects.createAnnotationObject(mergedROI, annotation1.getPathClass())
     return mergedAnnotation
 }
@@ -155,12 +173,12 @@ do {
 
             double distance = calculateDistance(annotation1, annotation2)
             if (distance < distanceThreshold) {
-                print "Merging annotation ${i} and annotation ${j} with distance: ${distance} micrometers"
+                //print "Merging annotation ${i} and annotation ${j} with distance: ${distance} micrometers"
                 
-                // Merge the two annotations
+                // Merge
                 def mergedAnnotation = mergeAnnotations(annotation1, annotation2)
 
-                // Schedule annotations to be removed and added
+                // Store to keep or remove
                 if (mergedAnnotation != null) {
                     toRemove.add(annotation1)
                     toRemove.add(annotation2)
@@ -173,13 +191,14 @@ do {
         if (merged) break
     }
 
-    // Apply changes outside the loop to avoid modifying the list during iteration
+    // Apply changes outside loop to not change list while iterating
     tissueAnnotations.removeAll(toRemove)
     tissueAnnotations.addAll(toAdd)
     toRemove.each { removeObject(it, true) }
     toAdd.each { addObject(it) }
+    
 } while (merged)
 
-print "Merging complete!"
+print "Number of tissue annotations found: ${tissueAnnotations.size()}"
 
         

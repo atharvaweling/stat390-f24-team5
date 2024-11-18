@@ -32,21 +32,14 @@
           128
         ]
       },
-      "1": {
-        "name": "Ignore*",
-        "color": [
-          180,
-          180,
-          180
-        ]
-      }
+      "1": {}
     }
   },
   "op": {
     "type": "data.op.channels",
     "colorTransforms": [
       {
-        "combineType": "MEAN"
+        "channelName": "Red"
       }
     ],
     "op": {
@@ -54,13 +47,13 @@
       "ops": [
         {
           "type": "op.filters.gaussian",
-          "sigmaX": 9.0,
-          "sigmaY": 9.0
+          "sigmaX": 10.0,
+          "sigmaY": 10.0
         },
         {
           "type": "op.threshold.constant",
           "thresholds": [
-            220.0
+            225.0
           ]
         }
       ]
