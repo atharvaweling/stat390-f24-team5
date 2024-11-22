@@ -15,4 +15,11 @@
 	- currently using Python OpenCV. It is possible to do this in QuPath before exporting but it is not as effective. underestimates
 4. No more manual merging, splitting, or deletion! Much faster and much less demanding (don't have to go through every individual annotation)
 5. Program generalizes to new samples
+6. We know have the `sox10_restaining` tissues processed
 
+## Tissue Slice Extraction Next Directions
+- Combine Cara's tissue thresholders with my scripts. Make sure to change the classifier path in the `master_script` based on what Cara named her tissue classifiers.
+- Rather than use Python to eliminate blurry samples after exporting from QuPath, improve the detection and removal of blurry annotations within QuPath
+- In general, improve detection of blurry samples. Right now, the program is using a set threshold, which works better for some stains/samples than others. I suggest using an adaptive threshold or training a pixel classifier in QuPath.
+	- Merging distance threshold could also benefit from adaptibility to better handle diverse samples
+ - Investigate the following cases: h2113828 (Liverpool), h2114167 (Sheffeild), h2125906C (Liverpool), h1854400 sox10 (Liverpool)
