@@ -1,3 +1,19 @@
+# Adaptive Pooling Methods and Improvements
+
+Results suggest Adaptive Mixed Pooling is the best for mapping our differently sized input images to a fix output size. Max pooling alone seems to be the best alternative. Within both, performance can be improved with additional convolutional layers, droupout methods, regularization (L2), learning rate adjustments, and not defining a kernel (let the model use default behavior of determining best kernel based on input).
+
+#### Suggestions for Next Quarter
+Ways to improve feature extraction and pooling layer adaptability (in order of what I think may work best):
+- Use attention mechanisms to guide the pooling process, focusing on the most relevant spatial regions (aka combine the pooling with an attention map)
+- Apply pooling at multiple scales and then combine through conactenation or additional pooling (should help capture both fine and coarse-grained features)
+    - mixed pooling on subregions, then aggregate the results (using weighted sum, attention mechanism, or smth else)
+- In addition to mixed pooling, use dilated convlutions to enhance receptive fields before pooling. and/or preserve unpooled features using residual connections to later fuse with the pooled outputs. 
+- Apply regularization to prevent pooling weights from being overly biased towards max or average.
+- Apply mixed pooling within each level of a spatial pyramid (Spatial Pyramid Pooling) and aggregate across levels for multi-scale representations
+- Instead of using pre-defined or auto-defined kernel, make a secondary neural network to predict the optimal kernel size for pooling layers
+
+There are many different directions to go with this. I think this O-shape prediction problem may do better with different settings (conv layers, pooling options, etc.) than our tissue data. So it may be better to refine these results and try out different methods using the data we plan to use this on. 
+
 ## Adaptive Pooling Options
 
 #### Adaptive Sum Pooling
@@ -30,7 +46,7 @@
     - Outputs are computed as a weighted sum of activations.
 
 ---
-### **Summary Comparison
+### Summary Comparison
 
 | **Method**                   | **Aggregation**                  | **Advantages**                                 | **Disadvantages**                            |
 | ---------------------------- | -------------------------------- | ---------------------------------------------- | -------------------------------------------- |
