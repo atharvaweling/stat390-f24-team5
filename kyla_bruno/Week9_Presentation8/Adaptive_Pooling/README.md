@@ -1,3 +1,5 @@
+## Adaptive Pooling Options
+
 #### Adaptive Sum Pooling
 - Sums all values in each region
 - Similar to average pooling but without dividing by num elements
