@@ -22,7 +22,6 @@
 6. Click three dots in bottom right of box --> Click "Run for project" --> hit ">>" in center to select all images --> click "OK"
 	- wait for batch processing to complete
 7. Close the script editor
-	- *Optional: review annotations and delete any you dont want
 
 >Note the difference between "Run for project" and "Run". The master script is meant to be run for the entire project while the export annotations script is built to simply "Run"
 
