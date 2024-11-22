@@ -30,7 +30,7 @@
 > its possible to get an "Out of memory" interruption. Make sure you have storage on your machine. Perhaps later we can implement an option to export to a flashdrive or some external disk in the GUI. The default is to load the extracted slices to the directory of the project. 
 
 ##### Remove Blurry Results
-9. in VS Code or some other IDE, run `blurry.py`, which will automatically delete tissue samples with a blurriness score below a given threshold (currently set at 50. can be adjusted).
+9. in VS Code or some other IDE, run `blurry.py`, which will automatically delete tissue samples with a blurriness score below a given threshold (currently set at 50. can be adjusted). File should be within the project directory.
    
 ##### View Extracted Slices
 10. Navigate to `/Extract_Tissues/Tissues` in your directory. 
