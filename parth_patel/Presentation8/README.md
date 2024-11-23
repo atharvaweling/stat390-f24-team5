@@ -7,7 +7,7 @@ Multichannel CNN used on small sample dataset of patches. 3 channels for each 3 
 *Steps:*
 1. Run the pipeline code to make patches across stains
 2. Selected few patient level patches (meaning a patch folder with all 3 stains) and moved to folder patches_selected (done because patching is not perfect)
-3. Open severity_label.py and add severity label to patient_severity dictionary. Run
+3. Open severity_labels.py and add severity label to patient_severity dictionary. Run creating severity_labels.csv
 4. Open mod_con.py and adjust patches_dir to directory leading to the patches_selected folder. The folder is shown below.
 5. Results should be generated.
 
