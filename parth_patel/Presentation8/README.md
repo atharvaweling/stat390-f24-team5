@@ -12,3 +12,9 @@ Multichannel CNN used on small sample dataset of patches. 3 channels for each 3 
 5. Results should be generated.
 
 <img width="777" alt="Screenshot 2024-11-22 at 5 36 11 PM" src="https://github.com/user-attachments/assets/24f64005-597c-4ea8-851a-262f67d6c740">
+
+<br>
+<br>
+My patches_selected folder can be accessed through drive: <br>
+
+[patches_selected_folder](https://drive.google.com/drive/folders/1B78v-09RlqeZTSoDwpmn2t6K_YiWSYlr?usp=drive_link)
